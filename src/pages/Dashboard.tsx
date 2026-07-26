@@ -57,7 +57,7 @@ const Dashboard = () => {
 
         <section className="graphContainer">
           <div className="revenue-chart">
-            <h2>Revenue & Transaction</h2>
+            <h2>Revenue and Transaction</h2>
             {/* graphHere */}
             <BarChart
               data_2={[300, 144, 433, 655, 237, 755, 190]}

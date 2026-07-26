@@ -66,6 +66,13 @@ const AdminSidebar = () => {
               location={location}
             />
 
+              <Li
+              url="/admin/MAP"
+              text="MAP"
+              Icon={RiDashboardFill}
+              location={location}
+            />
+
             <Li
               url="/admin/Locations"
               text="Locations"

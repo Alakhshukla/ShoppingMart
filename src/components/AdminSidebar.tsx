@@ -11,7 +11,7 @@ const AdminSidebar = () => {
 
   const [showModal, setShowModal] = useState<boolean>(false);
   const [phoneActive, setPhoneActive] = useState<boolean>(
-    window.innerWidth < 1100
+    window.innerWidth < 1100,
   );
 
   const resizeHandler = () => {
@@ -67,6 +67,13 @@ const AdminSidebar = () => {
             />
 
             <Li
+              url="/admin/Locations"
+              text="Locations"
+              Icon={RiDashboardFill}
+              location={location}
+            />
+
+            <Li
               url="/admin/Customers"
               text="Customers"
               Icon={IoIosPeople}
@@ -80,14 +87,13 @@ const AdminSidebar = () => {
               location={location}
             />
           </ul>
-        </div>
+        </div> 
 
         {phoneActive && (
-            <button id="close-sidebar" onClick={() => setShowModal(false)}>
-              close
-            </button>
-          )}
-
+          <button id="close-sidebar" onClick={() => setShowModal(false)}>
+            close
+          </button>
+        )}
       </aside>
     </>
   );
